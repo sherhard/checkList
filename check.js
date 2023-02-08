@@ -18,6 +18,8 @@ function listBut(){
 		list.removeChild(this)
 	}
 
+	
+
 
 
 	
