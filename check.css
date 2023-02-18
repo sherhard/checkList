@@ -8,6 +8,9 @@
 .onlist{
 	padding: 80px;
 }
+#list{
+	font-size: 20px;	
+}
 
 #check_list{
 	width: 200px;

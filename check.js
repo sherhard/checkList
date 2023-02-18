@@ -1,30 +1,22 @@
-let listButton=document.getElementById('listBtn')
 
-let check=document.getElementById('check_list');
+let check_list=document.getElementById('check_list');
+let addBtnList=document.getElementById('listBtn');
 let list=document.getElementById('list');
 
-listButton.addEventListener('click',listBut);
 
+addBtnList.addEventListener('click',addButton);
 
+function addButton(){
+	let addList=document.createElement('li');
+		addList.innerHTML=check_list.value;
+		list.appendChild(addList);
+		check_list.value='';
 
-function listBut(){
-	let task=document.createElement('p');
-	task.innerHTML=check.value;
-	list.appendChild(task);
-	check.value='';
-
-	task.addEventListener('click',del);
-	function del(){
+		addList.addEventListener('click',deleteTask);
+	function deleteTask(){
 		list.removeChild(this)
 	}
-
-	
-
-
-
-	
 }
-
 
 
 
